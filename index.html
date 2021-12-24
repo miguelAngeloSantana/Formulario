@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de matricula</title>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>Aula Virtual</h1>
+        <p><b>Formulario de pré-matricula</b></p>
+    </div>
+
+    <form action="blblblb.php" method="POST">
+        <fieldset class="dados-pessoais">
+            <div class="cabecalho-pessoal">
+                <h3>Dados Pessoais:</h3><br/>
+            </div>
+
+            <div class="dados">
+                <label>
+                    <strong>Nome do Aluno</strong>:
+                    <input type="text" name="nome" required maxlength="40" id="nome-aluno"/>
+                </label><br/>
+            </div>
+
+            <div class="dados">
+                <label>
+                    <strong>Nascimento</strong>
+                    <input type="date" required id="nascimento">
+                </label><br/>
+            </div>
+
+            <div class="dados">
+                <label>
+                    <strong>Nome do Pai</strong>: 
+                    <input type="text" name="nome-pai" id="nome-pai">
+                </label><br/>
+            </div>
+
+            <div class="dados">
+                <label>
+                    <strong>Nome da Mãe</strong>: 
+                    <input type="text" name="nome-mae" id="nome mae">
+                </label>
+            </div> 
+
+            <div class="dados">
+                <label>
+                    <strong>Telefone</strong>:
+                    <input type="tel" name="phone" id="telephone" required maxlength="13">
+                </label><br/>
+            </div>
+
+            <div class="dados">
+                <label>
+                    <strong>E-mail</strong>:
+                    <input type="email" name="email" id="email" required>
+                </label><br/>
+            </div>
+        </fieldset>
+
+        <div class="cabecalho-matricula">
+            <h3>Informações de Matricula:</h3>
+        </div>
+
+        <fieldset class="matricula">
+            <div class="serie">
+                <label><strong>Serie:</strong></label><br/>
+                    <select name="series" id="series" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>pré-escolar</option>
+                        <option>ensino médio</option>
+                        <option>ensino fundamental</option>
+                    </select>
+            </div>
+
+            <div class="turno">
+                <label><strong>Turno:</strong></label><br/>
+
+                    <label>
+                        <input type="radio" name="turno" value="manha">Manhã
+                    </label><br/>
+
+                    <label>
+                        <input type="radio" name="turno" value="tarde">Tarde
+                    </label><br/>
+
+                    <label>
+                        <input type="radio" name="turno" value="noite">Noite
+                    </label>
+            </div>
+
+            <div class="atividades-extras">
+                <label><strong>Atividade Extracurriculares:</strong></label><br/>
+                <input type="checkbox" id="atividades1" name="atividades1" value="Religiao">
+                <label for="atividades1">Religião</label><br/>
+                <input type="checkbox" id="atividade2" name="atividade2" value="Espanhol">
+                <label for="atividade2">Espanhol</label><br/>
+                <input type="checkbox" id="atividade3" name="atividade3" value="Musica">
+                <label for="atividade3">Música</label><br/>
+                <input type="checkbox" id="atividade4" name="atividade4" value="Informatica">
+                <label for="atividade4">Informática</label><br/>
+                <input type="checkbox" id="atividade5" name="atividade5" value="Danca">
+                <label for="atividade5">Dança</label><br/>
+                <input type="checkbox" id="atividade6" name="atividade6" value="artes-marcias">
+                <label for="atividade6">Artes-Marcias</label>
+            </div>
+        </fieldset>
+
+        <div class="botoes">
+            <input type="submit" value="Enviar Formulario" class="enviar">
+            <input type="reset" value="Limpar Campos" class="apagar">
+        </div>
+    </form>
+    
+    
+</body>
+</html>
